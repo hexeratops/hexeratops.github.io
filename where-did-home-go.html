@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Where did /home go?... &ndash; derpybox</title>
+
+    <!-- Meta -->
+    <meta name="description" content="derpybox &ndash; ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin" />
+
+    <!-- Social -->
+    <meta property="article:author" content="LuckyStoat" />
+    <meta property="article:section" content="social" />
+    <meta property="article:published_time" content="2019-06-02" />
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Where did /home go?..."/>
+    <meta property="og:description" content="I swear, every time I try starting up my blog again, something explodes."/>
+    <meta property="og:site_name" content="derpybox" />
+    <meta property="og:url" content="https://www.derpybox.com/where-did-home-go.html"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Where did /home go?...">
+    <meta name="twitter:description" content="I swear, every time I try starting up my blog again, something explodes.">
+    <meta name="twitter:url" content="https://www.derpybox.com/where-did-home-go.html">
+
+    <!-- Feed -->
+    <link rel="alternate" type="application/atom+xml" href="https://www.derpybox.com/feeds/atom.xml" title="derpybox Atom Feed" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/pygments-highlight-github.css">
+    <link rel="stylesheet" type="text/css" href="/emoji_map/emoji.css">
+
+    <!-- Icon -->
+
+    <!-- Social -->
+    <link href="https://mastodon.social/@LuckyStoat" rel="me">
+  </head>
+
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://www.derpybox.com" title="Home"><img src="/images/icon_joltik.png" style="width:60px;height:60px;min-width:60px;"></a>
+        <nav id="header-menu">
+          <ul>
+            <li><a href="https://www.derpybox.com/pages/about-this-site.html">About this Site</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+
+
+    <br><br><br>
+
+    <article>
+      <header class="w3-container col-main">
+        <h1>Where did /home go?...</h1>
+        <div class="post-info">
+          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+            <span><time datetime="2019-06-02T00:00:00-04:00">Sun 02 June 2019</time> in <a href="https://www.derpybox.com/category/social.html" title="All articles in category social">social</a></span>
+          </div>
+          <div>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://www.derpybox.com/tag/banter.html" title="All articles with Banter tag">#banter</a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <br>
+
+
+      <div class="col-main w3-container">
+        <section id="content">
+          <p>I must be cursed as a blogger. Every time I start writing articles,
+something stupid happens. This time, my distro-hopping ways have finally
+caught up with me.</p>
+<p>Let's rewind a bit; about a week ago, I decided to change my Linux distro because
+I wanted to try out what's happening in KDE. I downloaded Neon as it's
+basically Ubuntu + the latest version of KDE. Upon installing it, I started
+receiving numerous errors that there were bad sectors on my disk. I could
+barely login let alone do anything useful. So I went back to the live USB
+and ran fsck on the drive.</p>
+<p>It was at that moment that I knew I royally fscked up. Its solution was
+to essentially destroy my home directory. Everything I had; gone. No matter! I have
+a backup folder!... Or rather, had. At some point, I accidentally formatted the
+drive. After panicking for about 10-15 minutes, I realized I had a backup of 
+my most important files on an external drive. Thankfully, my old backup was
+there and worked. I didn't regain everything, but I retained my most important
+files that I can't replace.</p>
+<p>Once I calmed down, I learned something interesting. fsck doesn't
+exactly nuke everything; it tries to recover what it can and inserts the
+files it can recover into the lost+found folder on your hard drive root.
+Well, it's not exactly pretty. The folder names are mangled into unreadable 
+names, but you can still recover a fair bit with some bash wizardry.</p>
+<p>After learning about the existance of Lost+Found, I ran the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">foo@bar:~$ </span>find<span class="w"> </span>../lost+found/<span class="w"> </span>&gt;<span class="w"> </span>~/derp
+</code></pre></div>
+
+<p>This basically created a file index for me to go through with vim. There are
+too many files to manually browse through in terminal, so I created a little 
+index of everything there. And believe it or not, I'd say 98% of my home directory
+was there. I just had to dig down to the right folder and pick up my stuff.</p>
+<p>So if you're ever in the same situation, have a dig down in the lost+found. You'll
+never know what you'll find. Honestly though, you don't want to end up in this 
+position in the first place. Back up your stuff and make sure your stuff is being 
+backed up on a semi-regular basis. If you don't do that, at least make sure to have
+copies of your most valuable files on a USB drive or an external drive.</p>
+        </section>
+
+        <br><br><br>
+
+        <footer>
+          <div class="adjust-width">
+            <div id="author-block" class="w3-light-grey w3-border">
+              <div id="author-info">
+                <a href=""><img style="width: 60px; height: 60px;" src="https://www.gravatar.com/avatar/0d22b66f89ce7b9d46e3d9fde6c80405?s=160" onerror="this.src='theme/images/avatar.png'" alt="Avatar"></a>
+                <div style="margin-left: 20px; margin-top: 15px;">
+                  <a href=""><span id="author-name" class="w3-hover-text-dark-grey">LuckyStoat</span></a>
+                  <p id="author-story">Software developer and amateur astronomer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+	  <!--
+          <p style="font-size:10pt; font-style: italic;">Did you like this article? Share it with your friends!</p>
+          <div id="share" class="share">
+            <a href="http://www.facebook.com/sharer.php?u=https%3A//www.derpybox.com/where-did-home-go.html&amp;t=derpybox%3A%20Where%20did%20/home%20go%3F..." target="_blank" class="w3-btn w3-indigo">
+              <i class="fa fa-facebook"></i> <span>Facebook</span>
+            </a>
+            <a href="http://twitter.com/share?url=https%3A//www.derpybox.com/where-did-home-go.html&amp;text=derpybox%3A%20Where%20did%20/home%20go%3F..." target="_blank" class="w3-btn w3-blue">
+              <i class="fa fa-twitter"></i> <span>Twitter</span>
+            </a>
+          </div>
+	  -->
+
+          <br><br><br>
+
+
+
+        </footer>
+      </div>
+    </article>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          &copy;
+          LuckyStoat
+ | <a href="https://www.derpybox.com/feeds/atom.xml">Atom feed <i class="fa fa-rss" aria-hidden="true"></i></a>        </span>
+      </div>
+    </footer>
+
+
+
+  </body>
+</html>

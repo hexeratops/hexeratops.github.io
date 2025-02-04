@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Debian Stable for a Month &ndash; derpybox</title>
+
+    <!-- Meta -->
+    <meta name="description" content="derpybox &ndash; ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin" />
+
+    <!-- Social -->
+    <meta property="article:author" content="LuckyStoat" />
+    <meta property="article:section" content="social" />
+    <meta property="article:published_time" content="2023-11-25" />
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Debian Stable for a Month"/>
+    <meta property="og:description" content="I decided to install Debian and stick with stable for a month. And it went rather well!"/>
+    <meta property="og:site_name" content="derpybox" />
+    <meta property="og:url" content="https://www.derpybox.com/debian-stable-for-a-month.html"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Debian Stable for a Month">
+    <meta name="twitter:description" content="I decided to install Debian and stick with stable for a month. And it went rather well!">
+    <meta name="twitter:url" content="https://www.derpybox.com/debian-stable-for-a-month.html">
+
+    <!-- Feed -->
+    <link rel="alternate" type="application/atom+xml" href="https://www.derpybox.com/feeds/atom.xml" title="derpybox Atom Feed" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/pygments-highlight-github.css">
+    <link rel="stylesheet" type="text/css" href="/emoji_map/emoji.css">
+
+    <!-- Icon -->
+
+    <!-- Social -->
+    <link href="https://mastodon.social/@LuckyStoat" rel="me">
+  </head>
+
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://www.derpybox.com" title="Home"><img src="/images/icon_joltik.png" style="width:60px;height:60px;min-width:60px;"></a>
+        <nav id="header-menu">
+          <ul>
+            <li><a href="https://www.derpybox.com/pages/about-this-site.html">About this Site</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+
+
+    <br><br><br>
+
+    <article>
+      <header class="w3-container col-main">
+        <h1>Debian Stable for a Month</h1>
+        <div class="post-info">
+          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+            <span><time datetime="2023-11-25T00:00:00-05:00">Sat 25 November 2023</time> in <a href="https://www.derpybox.com/category/social.html" title="All articles in category social">social</a></span>
+          </div>
+          <div>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://www.derpybox.com/tag/banter.html" title="All articles with Banter tag">#banter</a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <br>
+
+
+      <div class="col-main w3-container">
+        <section id="content">
+          <h2>Backstory</h2>
+<p>I have a problem: I... I am a distro hopper. I can't permanently settle on just
+one Linux distribution. I may settle on one for a few months, but I'll eventually
+get bored and want to go explore what another distribution is offering.</p>
+<p>I have tried virtually all the most common Linux distros, including but not limited
+to Ubuntu, Mint, Debian, Arch, Fedora, OpenSUSE, KDE neon, MX Linux, Elementary,
+Bodhi, Puppy, Void, PCLinuxOS, Solus, Alpine, Mageia and many, many more. Which
+does honestly beg the question: why? What am I looking for?</p>
+<p>Well in some cases, there was a genuine need. Puppy, for instance, I needed for
+a computer which didn't have a hard drive. Some were for curiosity sake, such as
+Mageia and Alpine.  Most though were because I was bored and wanted to explore
+what they had to offer in contrast to what I was running.</p>
+<p>I also have a bit of a flip-flop relationship with the idea of a stable desktop.
+Reliability is an important trait to me, but I also like having the newest and
+shiniest things. I mean, who doesn't? Unfortunately with many distros, these two
+things are in conflict with one another.</p>
+<p>Debian is famously stable with its 2-year update cycle. If you want things to just
+work and keep working, look no further. On the complete flip-side, you have rolling
+release distros like Arch, Void and Gentoo which never settle and just constantly
+push out updates. Once you install it, you never have to do a major distribution
+upgrade. The downside though is you never get that exciting headline, "Arch 23.11
+has released! Here's what's new!"</p>
+<p>Of course, the upside is that whenever a distro is doing one of those major updates,
+it isn't that big of a deal. With a rolling system, chances are that you already
+<em>have</em> most of those new packages.</p>
+<h2>Debian Stable</h2>
+<p>As I mentioned, I've used Debian before a couple of times. However, I've always
+used Debian Testing as a pseudo-rolling distribution.</p>
+<p>From what I understand, Debian has a package progression system where a package
+is first added to its Sid repository for preliminary testing, then it progresses
+into the testing repository. 6 months before the new stable version is released,
+the Testing repository is frozen and only bug fixes and security patches are added
+to it. Once it's deemed ready, that repository becomes the new stable and the cycle
+begins again.</p>
+<p>I wasn't confident enough to use pure Sid, but I was confident enough to stay on
+testing for most of my work. I can't remember running into any breakages. But after
+some time, I presumably got bored and went to something else.</p>
+<p>This time though, I tried using Debian Stable. A few things were different this time
+than the last time I used Debian, most critically the addition of Flatpaks.</p>
+<h2>Flatpak</h2>
+<p>Flatpak is an application sandboxing utility. It allows you to download an application
+and its dependencies in isolation from the rest of the system. There are other
+technologies similar to this for Linux, such as Snap and AppImage.</p>
+<p>This is especially a really good thing for Debian though. Here's the logic: Debian
+is famous for its stability, but because of that stability, it will only package
+security fixes in its stable edition. As such, when Debian Stable is reaching its
+end of life after a year, the userland software can become rather stale and outdated.
+With Flatpak though, you can install the latest apps on Debian without needing to
+abandon that reliability.</p>
+<p>Flatpaks are updated in isolation from the rest of the system and do not depend
+on system-level libraries. That way, you can allow Debian Stable to keep those
+libraries stable and secure while you can still enjoy the latest versions of your
+favourite applications.</p>
+<p>There are some downsides to flatpaks though, such as the download sizes involved
+and the configuration can be a little bit weird compared to natively installed
+programs. The file size problem is more because each flatpak has to be packaged
+with all its dependencies since you're not relying on system resources. The configuration
+problem is due to the sandboxing, where some of the application settings need to be
+managed in a different way.</p>
+<p>I thought this could be an interesting experiment to try, using Flatpak for my
+everyday applications and Debian Stable for my OS Core.</p>
+<h2>The Debian Experience</h2>
+<p>I was genuinely impressed with how well this worked. Debian is a fantastic desktop,
+everything more or less worked just as intended! It found my network printer right
+out of the box. (Note, I'm using an AMD GPU so I didn't have to deal with NVidia
+or really installing any non-free software.)</p>
+<p>Flatpak gave me a fairly good experience. Firefox worked perfectly and I was able
+to use programs like VSCode, Gimp and all without much trouble. I did have to do
+some tricks with the command line to get them to work nicely with Wayland, but it
+wasn't too much trouble and I only had to do it once. After that, Flatpak automatically
+kept them all up to date without much fuss.</p>
+<p>The updates were a nice change of pace too. A week after installation, I ran apt
+upgrade and only had 3 packages wanting to be updated. At this point, I was used
+to Fedora or Arch systems where you run the update command and you get like 30
+different libraries you don't care about all wanting to update.</p>
+<p>It was a great experience overall. However, there was one thing that was a bit
+frustrating: the desktop itself couldn't be a Flatpak. Gnome 43 is what you get
+for the next year and a half. I mean don't get me wrong, it's a great release
+and everything works as expected, but I like a little excitement in my life. I
+could switch over to testing to get Gnome 44.5, but that kind of defeats the
+point of my experiment. It could introduce instabilities in my core setup.</p>
+<p>I could have kept living like that, but the trouble is that I got bored. It was
+simply TOO reliable, too stable. If I were running a desktop where I HAD to have
+100% uptime for productivity, I could have ran that setup for years. However, I'm
+not that kind of user and I like to tinker with things.</p>
+<p>In addition, while Flatpak is an interesting technology, I felt less in control
+of what I was running on my system. The sandboxing adds a weird layer between
+the programs I'm running and everything else. For example, Firefox would
+always initially try to download to some weird file location burried deep inside
+its sandbox instead of the logical ~/Downloads folder. Launching apps is also
+fairly verbose from the CLI, instead of running 'firefox' in a terminal, you'd
+launch 'flatpak run org.mozilla.firefox'.</p>
+<h2>Reflection</h2>
+<p>I did enjoy this little experiment and I think if you just wanted to get things done, you
+could easily live with a setup like this. This experience is likely what immutable
+systems like Vanilla OS, Fedora Silverblue and OpenSUSE MicroOS are trying to
+accomplish, where you have a rock-solid base with custom packages installed in isolation.</p>
+<p>From what I've seen of those immutable systems, I'd actually vouch for Debian
+before using any of those. You aren't restricted to only using Flatpak, you can break out
+and use apt or tweak files in the root file system if you need to. At the end of
+the day, it's still a standard Linux distribution that you can manage how you like.
+Debian Stable itself has proven to be incredibly stable and a fantastic system
+to run.</p>
+<p>I'm looking forward to the release of Debian Trixie where I'm sure I'm going to
+visit it again. Perhaps... In a Virtual Machine? (Haha, just a bit of a joke.)</p>
+        </section>
+
+        <br><br><br>
+
+        <footer>
+          <div class="adjust-width">
+            <div id="author-block" class="w3-light-grey w3-border">
+              <div id="author-info">
+                <a href=""><img style="width: 60px; height: 60px;" src="https://www.gravatar.com/avatar/0d22b66f89ce7b9d46e3d9fde6c80405?s=160" onerror="this.src='theme/images/avatar.png'" alt="Avatar"></a>
+                <div style="margin-left: 20px; margin-top: 15px;">
+                  <a href=""><span id="author-name" class="w3-hover-text-dark-grey">LuckyStoat</span></a>
+                  <p id="author-story">Software developer and amateur astronomer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+	  <!--
+          <p style="font-size:10pt; font-style: italic;">Did you like this article? Share it with your friends!</p>
+          <div id="share" class="share">
+            <a href="http://www.facebook.com/sharer.php?u=https%3A//www.derpybox.com/debian-stable-for-a-month.html&amp;t=derpybox%3A%20Debian%20Stable%20for%20a%20Month" target="_blank" class="w3-btn w3-indigo">
+              <i class="fa fa-facebook"></i> <span>Facebook</span>
+            </a>
+            <a href="http://twitter.com/share?url=https%3A//www.derpybox.com/debian-stable-for-a-month.html&amp;text=derpybox%3A%20Debian%20Stable%20for%20a%20Month" target="_blank" class="w3-btn w3-blue">
+              <i class="fa fa-twitter"></i> <span>Twitter</span>
+            </a>
+          </div>
+	  -->
+
+          <br><br><br>
+
+
+
+        </footer>
+      </div>
+    </article>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          &copy;
+          LuckyStoat
+ | <a href="https://www.derpybox.com/feeds/atom.xml">Atom feed <i class="fa fa-rss" aria-hidden="true"></i></a>        </span>
+      </div>
+    </footer>
+
+
+
+  </body>
+</html>

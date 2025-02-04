@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>derpybox</title><link href="https://www.derpybox.com/" rel="alternate"></link><link href="https://www.derpybox.com/feeds/atom.xml" rel="self"></link><id>https://www.derpybox.com/</id><updated>2024-02-27T00:00:00-05:00</updated><entry><title>The Importance of Documentation</title><link href="https://www.derpybox.com/the-importance-of-documentation.html" rel="alternate"></link><published>2024-02-27T00:00:00-05:00</published><updated>2024-02-27T00:00:00-05:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2024-02-27:/the-importance-of-documentation.html</id><summary type="html">&lt;p&gt;A bit of a discussion/rant about software documentation and its increasing importance in modern times.&lt;/p&gt;</summary><content type="html">&lt;p&gt;So in my experience as a developer, documentation is probably one of the most overlooked or even
+downright ignored things. To be fair, I understand it completely! Documenting is boring, it's slow, 
+it's unglamorous, it often needs updating to stay relevant, it's generally not appreciated by other
+developers on the team... All in all, it's honestly a major pain. Compared to writing code and even 
+writing unit tests, documenting is an unfun slog in comparison.&lt;/p&gt;
+&lt;p&gt;However, I'd argue in modern times, documentation is even more important than ever. If you
+have a project you intend for other people to use, you owe it to them, to your team and to 
+yourself to write good documentation. &lt;/p&gt;
+&lt;h3&gt;Why Write Documentation?&lt;/h3&gt;
+&lt;p&gt;The main reason is fairly obvious: to simply explain just how to use what you've made.&lt;/p&gt;
+&lt;p&gt;Here's the thing, when someone wants to know how to use your library, the last thing they want
+to do is read your code. If I need to read the python code of a library to figure out how to
+get started, I &lt;em&gt;will&lt;/em&gt; move on to something else. The same goes for header files, telling someone 
+to read your header file to figure out your classes is just as bad and lazy. I don't want to have
+to read code for half an hour to end up determining that a library isn't a good fit for my project.&lt;/p&gt;
+&lt;p&gt;Good documentation saves time for everyone involved. Instead of your potential users needing to 
+spend hours reading your code to figure out if your library can actually help them or not, they can 
+just look at the documentation to see if its a good fit. From documentation, you can quickly determine
+the capabilities of the library and figure out how to use it in the way they need.&lt;/p&gt;
+&lt;p&gt;The other problem is the rise of AI and poor documentation only further increases its relevance.
+Imagine you have a complicated library like OpenCV, but it doesn't give you meaningful examples to
+accomplish simple goals. Previously, you'd probably Google it, go to Reddit or StackOverflow or end
+up on Discord to ask other developers. These days? You can just ask an AI to generate the sample code.&lt;/p&gt;
+&lt;p&gt;It's a horrible state of affairs when you come across a project so poorly explained that you need
+to ask an AI how a feature works or to get a starting point for your project. I don't like where
+this AI stuff is going, but I also value my time. When I come across a project with poor documentation,
+I'm not above asking Bing or ChatGPT what to do. It also never stubbornly says "Why are you trying to 
+do X when you could do Y?", or "Have you tried Googling it?" which are major frustrations of mine.&lt;/p&gt;
+&lt;h3&gt;Is it Good Enough?&lt;/h3&gt;
+&lt;p&gt;I would argue the following types of documentation aren't enough to fully document how a library
+works:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Header Files&lt;/li&gt;
+&lt;li&gt;Source Code Comments&lt;/li&gt;
+&lt;li&gt;Descriptions of classes/structs/functions in isolation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The major problems with these are that they describe things in isolation. This is great if you
+already have a picture in your head for using a library. If you're just trying to put some
+functionality together, this is useless.&lt;/p&gt;
+&lt;p&gt;Just imagine for a second that you're a fresh developer, trying to figure out a simple "hello world"
+program in C. Now picture that there's no examples of how to use printf and you're advised to read
+the man page on how it works. If you're trying to do something super niche, the man-page is great.
+But all the guy needs to do is &lt;code&gt;printf("Hello world!\n")&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;This is something that bugs me quite a bit about documentation generators from comments, such as
+Doxygen and Rustdoc. They document functions and structs in pains-taking detail, but you don't get
+the full picture of how everything fits together or examples of common and not-so-common tasks for 
+the library.&lt;/p&gt;
+&lt;h3&gt;What to Do&lt;/h3&gt;
+&lt;p&gt;Examples, examples, examples, examples, examples! &lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ballmer - developers developers" src="https://www.derpybox.com/images/developers-ballmer.gif"&gt;&lt;/p&gt;
+&lt;p&gt;Build multiple common examples for your user. It's great having a simple example to get someone
+going off the bat, but what really helps a lot is having numerous examples showing different
+uses of your library. If I could give a massive shoutout to one library that absolutely does
+this right, it's &lt;a href="https://curl.se/libcurl/c/example.html"&gt;libcurl&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Just look at all these examples accomplishing different goals. On top of that, the code is
+meant to be short and sweet at the expense of ignoring error checks. This is where you &lt;em&gt;could&lt;/em&gt;
+use the function-by-function documentation to ensure you're using the library correctly and catching
+all error cases.&lt;/p&gt;
+&lt;p&gt;You can also use your unit tests as documentation to show what error conditions can happen and how 
+to check for them. I'd argue this partially falls under the previous section and that people shouldnt
+have to read your code to understand how to use your library. I don't think code should only be documented
+by unit tests, but it's important to have them and they can potentially act as proof of concept code.&lt;/p&gt;
+&lt;p&gt;The other mechanisms I described in the previous section are also helpful. Commenting your header files
+and creating isolated documentation for your functions and classes are helpful, but I think examples
+are the primary driver for their usefulness. Examples can give someone the big picture to start using
+a library while the detailed documentation can help them use it right and be driven to other functionality
+they hadn't noticed yet.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Sigh...&lt;/em&gt; This was just a big rant. I wanted to emphasize how important it is to have good documentation
+because I hate when I come across a great project where the documentation is missing. So please, if
+you're releasing something for people to use, please make sure you explain what you've done and how
+other people can make use of it properly.&lt;/p&gt;</content><category term="development"></category><category term="Software"></category></entry><entry><title>Aquaman and the Lost Kingdom Review</title><link href="https://www.derpybox.com/aquaman-and-the-lost-kingdom-review.html" rel="alternate"></link><published>2024-01-01T00:00:00-05:00</published><updated>2024-01-01T00:00:00-05:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2024-01-01:/aquaman-and-the-lost-kingdom-review.html</id><summary type="html">&lt;p&gt;Let's review the sequel to the film that started it all for me.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Happy new year, everyone! I wish you all a very happy 2024. I mentioned earlier that I
+wanted to be more frequent on my blog, and something I like doing is going to the movies.
+So I thought, why not share my opinions on the films I see?&lt;/p&gt;
+&lt;p&gt;Going to the movies regularly actually started with Aquaman on my 2018 Christmas holiday.
+I hadn't seen any superhero movies before and thought it would be an interesting genre
+to try. I had a blast with this movie and it lead to me going to the movies more often.
+The idea of Arthur becoming King of Atlantis not because he wanted to or was even worthy 
+of it, but because he had to, was just so good. I loved watching Arthur transform into 
+this unstoppable hero with the entire orchestra backing him up.&lt;/p&gt;
+&lt;p&gt;I was eagerly awaiting its sequel and re-watched this movie at least twice more. The sequel
+was released a few weeks ago and I finally got to see it today.&lt;/p&gt;
+&lt;h3&gt;The Plot&lt;/h3&gt;
+&lt;p&gt;Black Manta wants revenge on Arthur for killing his father in the first movie. He teams up
+with scientist Stephen Shin to locate Atlantis. Searching in the arctic, Stephen and Black
+Manta find the black trident, an artifact of a previous fallen Atlantian kingdom. Wielding
+the trident, Black Manta speaks to the spirit possessing the trident which promises him immense
+power for doing his bidding.&lt;/p&gt;
+&lt;p&gt;Black Manta ends up gaining knowledge of this old Atlantean technology called Orichalcum. It
+fell out of favour because even though it was an energy rich material, it released greenhouse gasses
+at an alarming rate causing climate change. So now, Arthur has to team up with his brother Orm to stop 
+Black Manta from destroying the environment and bringing back this ancient force which is possessing 
+the black trident.&lt;/p&gt;
+&lt;h3&gt;Thoughts&lt;/h3&gt;
+&lt;p&gt;Unfortunately, I didn't like Aquaman and the Lost Kingdom and it was a massive disappointment.
+I thought the movie was boring and unfortunately rather unfun.&lt;/p&gt;
+&lt;p&gt;You could argue the theme of this movie is restoring the relationship between Arthur and his brother
+Orm, but I feel this theme isn't as strong as the theme from the first movie. Arthur undergoes virtually
+no character development while Orm gets the most. By the end of the movie, he no longer hates humanity.
+However, I don't think he earned this redemption.&lt;/p&gt;
+&lt;p&gt;While he worked with Arthur for about half the movie, here's the thing: after the events of the first
+film, he gets locked away underground in the desert with these skeleton creatures acting as his jailers.
+They torment him and torture him, only offering a few drops of water to keep him alive. Then, as soon as
+Arthur realizes he actually needs his brother's help, he decides to show up and says, "You look worse
+for wear. Grab Wilson and let's go." &lt;em&gt;Cue laugh track.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The action scenes weren't particularly well done and didn't hold my attention. This is more of a common
+issue for me with action movies these days, but I didn't like how overpowered Black Manta was with his laser
+eyes. The laser eye thing felt overused, but I think that's the only way the writers could think of
+for him to subdue the main characters without outright killing them. He is such a one-dimensional villain
+driven by revenge that he would otherwise kill everyone he gets an edge over. Whenever he used his laser
+eyes, the fight would be over.&lt;/p&gt;
+&lt;p&gt;There was also a weapon the bad guys had which emitted sound waves that instantly knocked out any of the
+Atlantians they were struggling against. Of course by the last act, the good guys had a way to counteract
+it, but this was such a lame plot device. It &lt;em&gt;really&lt;/em&gt; made combat against the villains pointless because
+they always had an easy escape. There's just no stakes, and the visual effects didn't have enough of
+a wow-factor to keep my interest in those scenes. &lt;/p&gt;
+&lt;p&gt;Again, I was looking forward to this movie and I wanted to like it. I guess it just wasn't the film
+for me. I wouldn't suggest seeing it, but do go see the Wonka movie. It was such a great feel-good
+movie that really hit the spot.&lt;/p&gt;</content><category term="movie_reviews"></category><category term="Movies"></category></entry><entry><title>Debian Stable for a Month</title><link href="https://www.derpybox.com/debian-stable-for-a-month.html" rel="alternate"></link><published>2023-11-25T00:00:00-05:00</published><updated>2023-11-25T00:00:00-05:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2023-11-25:/debian-stable-for-a-month.html</id><summary type="html">&lt;p&gt;I decided to install Debian and stick with stable for a month. And it went rather well!&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Backstory&lt;/h2&gt;
+&lt;p&gt;I have a problem: I... I am a distro hopper. I can't permanently settle on just
+one Linux distribution. I may settle on one for a few months, but I'll eventually
+get bored and want to go explore what another distribution is offering.&lt;/p&gt;
+&lt;p&gt;I have tried virtually all the most common Linux distros, including but not limited
+to Ubuntu, Mint, Debian, Arch, Fedora, OpenSUSE, KDE neon, MX Linux, Elementary,
+Bodhi, Puppy, Void, PCLinuxOS, Solus, Alpine, Mageia and many, many more. Which
+does honestly beg the question: why? What am I looking for?&lt;/p&gt;
+&lt;p&gt;Well in some cases, there was a genuine need. Puppy, for instance, I needed for
+a computer which didn't have a hard drive. Some were for curiosity sake, such as
+Mageia and Alpine.  Most though were because I was bored and wanted to explore
+what they had to offer in contrast to what I was running.&lt;/p&gt;
+&lt;p&gt;I also have a bit of a flip-flop relationship with the idea of a stable desktop.
+Reliability is an important trait to me, but I also like having the newest and
+shiniest things. I mean, who doesn't? Unfortunately with many distros, these two
+things are in conflict with one another.&lt;/p&gt;
+&lt;p&gt;Debian is famously stable with its 2-year update cycle. If you want things to just
+work and keep working, look no further. On the complete flip-side, you have rolling
+release distros like Arch, Void and Gentoo which never settle and just constantly
+push out updates. Once you install it, you never have to do a major distribution
+upgrade. The downside though is you never get that exciting headline, "Arch 23.11
+has released! Here's what's new!"&lt;/p&gt;
+&lt;p&gt;Of course, the upside is that whenever a distro is doing one of those major updates,
+it isn't that big of a deal. With a rolling system, chances are that you already
+&lt;em&gt;have&lt;/em&gt; most of those new packages.&lt;/p&gt;
+&lt;h2&gt;Debian Stable&lt;/h2&gt;
+&lt;p&gt;As I mentioned, I've used Debian before a couple of times. However, I've always
+used Debian Testing as a pseudo-rolling distribution.&lt;/p&gt;
+&lt;p&gt;From what I understand, Debian has a package progression system where a package
+is first added to its Sid repository for preliminary testing, then it progresses
+into the testing repository. 6 months before the new stable version is released,
+the Testing repository is frozen and only bug fixes and security patches are added
+to it. Once it's deemed ready, that repository becomes the new stable and the cycle
+begins again.&lt;/p&gt;
+&lt;p&gt;I wasn't confident enough to use pure Sid, but I was confident enough to stay on
+testing for most of my work. I can't remember running into any breakages. But after
+some time, I presumably got bored and went to something else.&lt;/p&gt;
+&lt;p&gt;This time though, I tried using Debian Stable. A few things were different this time
+than the last time I used Debian, most critically the addition of Flatpaks.&lt;/p&gt;
+&lt;h2&gt;Flatpak&lt;/h2&gt;
+&lt;p&gt;Flatpak is an application sandboxing utility. It allows you to download an application
+and its dependencies in isolation from the rest of the system. There are other
+technologies similar to this for Linux, such as Snap and AppImage.&lt;/p&gt;
+&lt;p&gt;This is especially a really good thing for Debian though. Here's the logic: Debian
+is famous for its stability, but because of that stability, it will only package
+security fixes in its stable edition. As such, when Debian Stable is reaching its
+end of life after a year, the userland software can become rather stale and outdated.
+With Flatpak though, you can install the latest apps on Debian without needing to
+abandon that reliability.&lt;/p&gt;
+&lt;p&gt;Flatpaks are updated in isolation from the rest of the system and do not depend
+on system-level libraries. That way, you can allow Debian Stable to keep those
+libraries stable and secure while you can still enjoy the latest versions of your
+favourite applications.&lt;/p&gt;
+&lt;p&gt;There are some downsides to flatpaks though, such as the download sizes involved
+and the configuration can be a little bit weird compared to natively installed
+programs. The file size problem is more because each flatpak has to be packaged
+with all its dependencies since you're not relying on system resources. The configuration
+problem is due to the sandboxing, where some of the application settings need to be
+managed in a different way.&lt;/p&gt;
+&lt;p&gt;I thought this could be an interesting experiment to try, using Flatpak for my
+everyday applications and Debian Stable for my OS Core.&lt;/p&gt;
+&lt;h2&gt;The Debian Experience&lt;/h2&gt;
+&lt;p&gt;I was genuinely impressed with how well this worked. Debian is a fantastic desktop,
+everything more or less worked just as intended! It found my network printer right
+out of the box. (Note, I'm using an AMD GPU so I didn't have to deal with NVidia
+or really installing any non-free software.)&lt;/p&gt;
+&lt;p&gt;Flatpak gave me a fairly good experience. Firefox worked perfectly and I was able
+to use programs like VSCode, Gimp and all without much trouble. I did have to do
+some tricks with the command line to get them to work nicely with Wayland, but it
+wasn't too much trouble and I only had to do it once. After that, Flatpak automatically
+kept them all up to date without much fuss.&lt;/p&gt;
+&lt;p&gt;The updates were a nice change of pace too. A week after installation, I ran apt
+upgrade and only had 3 packages wanting to be updated. At this point, I was used
+to Fedora or Arch systems where you run the update command and you get like 30
+different libraries you don't care about all wanting to update.&lt;/p&gt;
+&lt;p&gt;It was a great experience overall. However, there was one thing that was a bit
+frustrating: the desktop itself couldn't be a Flatpak. Gnome 43 is what you get
+for the next year and a half. I mean don't get me wrong, it's a great release
+and everything works as expected, but I like a little excitement in my life. I
+could switch over to testing to get Gnome 44.5, but that kind of defeats the
+point of my experiment. It could introduce instabilities in my core setup.&lt;/p&gt;
+&lt;p&gt;I could have kept living like that, but the trouble is that I got bored. It was
+simply TOO reliable, too stable. If I were running a desktop where I HAD to have
+100% uptime for productivity, I could have ran that setup for years. However, I'm
+not that kind of user and I like to tinker with things.&lt;/p&gt;
+&lt;p&gt;In addition, while Flatpak is an interesting technology, I felt less in control
+of what I was running on my system. The sandboxing adds a weird layer between
+the programs I'm running and everything else. For example, Firefox would
+always initially try to download to some weird file location burried deep inside
+its sandbox instead of the logical ~/Downloads folder. Launching apps is also
+fairly verbose from the CLI, instead of running 'firefox' in a terminal, you'd
+launch 'flatpak run org.mozilla.firefox'.&lt;/p&gt;
+&lt;h2&gt;Reflection&lt;/h2&gt;
+&lt;p&gt;I did enjoy this little experiment and I think if you just wanted to get things done, you
+could easily live with a setup like this. This experience is likely what immutable
+systems like Vanilla OS, Fedora Silverblue and OpenSUSE MicroOS are trying to
+accomplish, where you have a rock-solid base with custom packages installed in isolation.&lt;/p&gt;
+&lt;p&gt;From what I've seen of those immutable systems, I'd actually vouch for Debian
+before using any of those. You aren't restricted to only using Flatpak, you can break out
+and use apt or tweak files in the root file system if you need to. At the end of
+the day, it's still a standard Linux distribution that you can manage how you like.
+Debian Stable itself has proven to be incredibly stable and a fantastic system
+to run.&lt;/p&gt;
+&lt;p&gt;I'm looking forward to the release of Debian Trixie where I'm sure I'm going to
+visit it again. Perhaps... In a Virtual Machine? (Haha, just a bit of a joke.)&lt;/p&gt;</content><category term="social"></category><category term="banter"></category></entry><entry><title>I Hosted my own Social Media Site</title><link href="https://www.derpybox.com/i-hosted-my-own-social-media-site.html" rel="alternate"></link><published>2023-08-29T00:00:00-04:00</published><updated>2023-08-29T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2023-08-29:/i-hosted-my-own-social-media-site.html</id><summary type="html">&lt;p&gt;I tried hosting my own social media site. Here's how it went!&lt;/p&gt;</summary><content type="html">&lt;h2&gt;fedi.derpybox.com&lt;/h2&gt;
+&lt;p&gt;For about a month, I hosted a little server on fedi.derpybox.com. This was my own
+private instance of Pleroma, a service compatible with communicating with Mastodon
+servers and other similar services. The whole deal with the fediverse in general
+is that anyone can run their own instance and use it to send content to the rest
+of the network. Think of it kind of like email or IRC where you have lots of 
+different servers and clients talking the same protocol.&lt;/p&gt;
+&lt;p&gt;At any rate, I set up Pleroma on my instance instead of full Mastodon. There were
+a few reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Ease of Deployment. You didn't have to set up SMTP for a simple instance to work.&lt;/li&gt;
+&lt;li&gt;Hardware requirements. I was hosting on digital ocean, I could get away with a 14
+dollar/month VM.&lt;/li&gt;
+&lt;li&gt;I wanted to try something different. I was familiar with Mastodon's UI at that point
+and wanted something new.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I followed the guide on the main site for setting up my VM, tweaked my DNS settings
+to redirect the fed prefix, figured out how to configure Nginx and we were off to the
+races.&lt;/p&gt;
+&lt;p&gt;Something nobody told me was upon finishing the user setup, there was no content.
+It turns out that Pleroma requires you to start following people before content
+starts appearing from other servers. So I followed a group of users and started
+posting from it. I did quick little movie reviews and shared pokemon I captured
+in Pokemon New Snap. This went fine until about a month when I got adventurous...&lt;/p&gt;
+&lt;h2&gt;fed.derpybox.com&lt;/h2&gt;
+&lt;p&gt;After the first month, I... messed up. I got curious about a fork called Akkoma.
+Akkoma is a fork of Pleroma which includes some nifty features, like having a
+pane open to view toots from other servers.&lt;/p&gt;
+&lt;p&gt;I went through the upgrade process, fixed up my database and everything seemed
+to work. The UI looked great, I played around with the feeds feature, everything
+seemed to work great... until I noticed the inbound feed from other servers. It 
+was just &lt;em&gt;pouring&lt;/em&gt; in! I would have been happy if this was the first attempt I made
+at installing my instance, but I didn't want this now. I only really cared about the
+people I was following, and all these people were coming from servers from all over,
+even NSFW instances that I didn't want to associate with.&lt;/p&gt;
+&lt;p&gt;As an interesting side note, it appears different fediverse services have different
+methods of federation. I remember finding a Spanish blog post of someone trying
+to explain the differences between Mastodon, Pleroma and Akkoma. He noticed a similar
+thing with Akkoma and was very confused.&lt;/p&gt;
+&lt;p&gt;About 7 hours of my server chugging away at the inbound feeds, I stopped it and
+migrated my server from fedi.derpybox.com to fed.derpybox.com. I reinstalled
+pleroma and got everything back under control. I used my server happily for
+another month.&lt;/p&gt;
+&lt;h2&gt;The end&lt;/h2&gt;
+&lt;p&gt;Finally, towards the start of September, I decided to pull the plug on hosting
+my own instance. What caused the end was the realization that while the people I
+followed are generally good people, I couldn't vet everything that came in the
+federated feed. It was more or less an uncontrolled deluge of content that I didn't
+monitor or frankly even care about. If something nasty appeared there and ended up
+getting stored on my server, I'd be none the wiser.&lt;/p&gt;
+&lt;p&gt;Even though my server was a single user instance only for me, I still had
+a legal and ethical duty to be the admin and ensure everything was above board.
+I was running a single-user instance to avoid this, I didn't want to have this
+role. I also made the realization that if something horrible &lt;em&gt;did&lt;/em&gt; make its way
+into my server, I'm not the right type of person to deal with this type of evil
+stuff. I'm frankly too sensitive for that.&lt;/p&gt;
+&lt;h2&gt;Back to mastodon.social&lt;/h2&gt;
+&lt;p&gt;Before truly shutting down, I setup an alias to my account over at mastodon.social
+and transferred my account over there. I lost my content, but I kept my followers
+and imported my follower list.&lt;/p&gt;
+&lt;p&gt;It's true that I don't actually own the data on someone else's server, but as I said
+since the very start, I don't want to be responsible for other peoples' data. It's
+a sacrifice I'm willing to make to not have to be an admin. The other thing is that 
+anything said on the fediverse is pretty much public. Since your profile data and 
+comments are sent to other servers, there's realistically no way to wipe it out from 
+everywhere. For example, if you deleted your email address, everyone you sent emails
+to would still have your messages.&lt;/p&gt;
+&lt;p&gt;The positive outcome to all this is that I learned a lot when it comes to web hosting
+and knowing how the fediverse kind of works. I've found some interesting users along
+the way, shoutouts to the &lt;a href="https://johto.substack.com/"&gt;Johto Times Newsletter&lt;/a&gt; in particular.&lt;/p&gt;
+&lt;p&gt;I'm also still on Mastodon, and for the purposes of my blog, this is my preferred method
+of contact. Please feel free to reach out at &lt;a href="https://mastodon.social/@LuckyStoat"&gt;LuckyStoat@mastodon.social&lt;/a&gt;
+if you want to leave any comments, have any feedback or just want to chat. I'll be there!
+And who knows, maybe in the future if the fediverse gets better controls over the content
+which gets shared between servers, perhaps I'll relaunch fedi.derpybox.com once more.&lt;/p&gt;</content><category term="social"></category><category term="banter"></category></entry><entry><title>Web Integrity API</title><link href="https://www.derpybox.com/web-integrity-api.html" rel="alternate"></link><published>2023-08-08T00:00:00-04:00</published><updated>2023-08-08T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2023-08-08:/web-integrity-api.html</id><summary type="html">&lt;p&gt;Let's talk about this a bit...&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Web Integrity API&lt;/h3&gt;
+&lt;p&gt;A new proposal document has been pushed by a few Google employees. This proposal is 
+allegedly intended to certify that the web browser visiting a website is being used 
+by a human and that the browser hasn’t been tampered with.&lt;/p&gt;
+&lt;p&gt;The way it works is that before you communicate with a web server, it will require 
+you to contact an attestation server and pass a test. Passing the test grants you an 
+integrity token that may let you access the content. In essence, your browser needs to 
+ask permission to a third party to see if you’re allowed to view the content you’ve 
+navigated to and the website can decline you if they don’t trust your client.&lt;/p&gt;
+&lt;p&gt;In my opinion, this is all about greed and power, and not about security at all. I’m 
+not so far gone to believe this is Google attempting to force everyone into using Chrome 
+(at least not yet), but I do believe this is them trying to control the way people view 
+content on the web and eliminate the web as an open standard.&lt;/p&gt;
+&lt;p&gt;The biggest thing I think this is trying to attack is content scrapers. Various content 
+providers have recently been closing their APIs in fear of scripts stealing their content 
+for AI training data. Naturally, those same services have also been updating their terms 
+of service so they can build their own private AIs. At any rate, while they may lock down 
+their API, one thing they can’t lock down is their website itself, which can be vulnerable 
+to scraping. By restricting how you can talk to the web server, this loophole can be filled. 
+Coincidentally, this can also lead to other “helpful” benefits for advertisers and Google in 
+the long run to help them further reinforce their monopoly.&lt;/p&gt;
+&lt;p&gt;The sad thing about this though is that regular users won’t care one bit. This is too technical 
+to show up on their radar of things to care about, and for most users, they’re just using Chrome 
+anyway. Never the less, this is yet another nail in the coffin for the open web. For now, this 
+is a proposal, but I’m sure they’re going to ram this standard through. Honestly, who’s going to 
+stop them? It’d take something like the EU to stop it, Google has too much of a monopoly for the 
+other browser vendors to do anything besides decry it until they’re forced to adopt it.&lt;/p&gt;
+&lt;h3&gt;What to do?&lt;/h3&gt;
+&lt;p&gt;Don’t use Chrome, and don’t trust Google. Please use virtually any other browser other than Chrome 
+and Edge. So many of them try to make it easy for you to migrate as well.&lt;/p&gt;
+&lt;p&gt;There’s Firefox, Vivaldi, LibreWolf, Brave, Waterfox, so many choices you could go with. DuckDuckGo 
+has also been working on their own desktop browser as well that you could try out. A web browser 
+developed by a company which makes its money by advertising and tracking its users will not have 
+the interests of its users in mind.&lt;/p&gt;
+&lt;p&gt;I think we should also support decentralization, encouraging federated services like IRC and Mastodon 
+over Discord or Facebook, visiting smaller blogs, fan-made websites and forums over the StackOverflows 
+and Reddits of the world. I believe the web is at its healthiest when knowledge is split up across many 
+servers, not owned by any one massive company or small collection of companies.&lt;/p&gt;
+&lt;p&gt;This is one of my more extreme opinions, but please at the very least consider trying some of these other 
+web browsers. They all respect your privacy and aren’t driven by a company which makes its money by 
+tracking its users, selling ads, and scraping the web to only later say it’s unacceptable if anyone 
+else does it.&lt;/p&gt;</content><category term="social"></category><category term="banter"></category></entry><entry><title>What should be the introductory programming language</title><link href="https://www.derpybox.com/what-should-be-the-introductory-programming-language.html" rel="alternate"></link><published>2021-03-16T00:00:00-04:00</published><updated>2021-03-16T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2021-03-16:/what-should-be-the-introductory-programming-language.html</id><summary type="html">&lt;p&gt;What should be the best programming language to teach someone first?&lt;/p&gt;</summary><content type="html">&lt;p&gt;Every programmer was new to software development at some point. Some are self taught,
+others were mentored, and some went to college/university for a few years. But one question
+you will see every developer answer differently is: what is the best language to
+introduce someone to software development with?&lt;/p&gt;
+&lt;p&gt;You will never get anyone to agree on it because developers are human and prioritize
+different aspects of programming languages. Some decide on a certain language because
+it's easiest to build stuff with, some choose another because the platform that
+uses said language is in high demand, some choose a different language because
+while it's harder to use, it can be a solid foundation to learn on. Others choose
+a language because it's what they're most familiar with and their personal biases
+and years of experience get the best of them.&lt;/p&gt;
+&lt;p&gt;So in this article, I will talk about a few languages that I feel are best to start
+out with. I can't recommend a single language because I don't know what motivates
+you, so instead, I will offer a few suggestions and explain why I think they would
+be a good candidate as a first programming language.&lt;/p&gt;
+&lt;h3&gt;Python&lt;/h3&gt;
+&lt;p&gt;Python is a great programming language for someone who wants to create. The straight
+forward nature of python is fantastic for a beginner as learning how to program is already
+a fairly challenging thing in itself. Having a language that is willing to work with
+the developer as opposed to fighting them can go a long way. Plus, there are many
+free materials online you can use to learn it and books as well.&lt;/p&gt;
+&lt;p&gt;It is widely used in industry because it's so nice and easy to throw things together
+with quickly; this is why I said it's a great language for creators. You can build
+a simple server in 3 short lines of code vs the crazy ritual you would have to
+perform in C or even C# or Java to achieve the same thing. And if something isn't
+included in the language, you can bet someone out there has made a library for it.&lt;/p&gt;
+&lt;p&gt;Another benefit to learning Python is that it's virtually ubiquitous in the data
+science department. Machine learning is basically all python; yes, there are lower
+level frameworks, but they typically have a Python wrapper to make using them easier.
+You have really established libraries like Pandas, Numpy, SciPy and matplotlib at
+your disposal as well for analyzing big data.&lt;/p&gt;
+&lt;p&gt;The downside I see of learning Python first is that it's almost too simple. Because it's
+such a batteries-included language, a beginner won't be able to appreciate and learn
+about the intricate cogs and gears behind the simplicity. Concepts like threading
+and multiprocessing might be skipped over entirely because they're not easy concepts.&lt;/p&gt;
+&lt;h3&gt;JavaScript&lt;/h3&gt;
+&lt;p&gt;JavaScript is &lt;em&gt;THE&lt;/em&gt; language of the web and I would recommend it to anyone who wants
+to specifically be a web developer. In web development, there is a programming
+language monopoly; all client-side programming shall be done in JavaScript. There
+are other languages technically out there, but in the end, they all get transpiled
+into JavaScript. At the time of writing, it's been the assembly language of the 
+website for over the past 20 years.&lt;/p&gt;
+&lt;p&gt;Because of how universal JavaScript is on the web, it's broken out into desktop
+applications with electron and node webkit, server-side applications with NodeJS
+and I've even seen some cases where some embedded boards use JavaScript as their
+programming environment. If you learn JavaScript, you might be surprised with 
+how far knowing it might actually take you.&lt;/p&gt;
+&lt;p&gt;The language itself is known for having a really limited standard library. This
+is why it has massive collections of libraries freely available to use. When
+you run into something you really need, often yarn or npm has a package available.
+Unfortunately, dependencies often have their own dependencies and you can get a
+massive tree of files you need to download that can become literally hundreds of
+megabytes to gigabytes in size for a single project. &lt;/p&gt;
+&lt;h3&gt;C&lt;/h3&gt;
+&lt;p&gt;C is a programming language I would recommend to someone who wants a foundation
+to build on. It's a very barebones programming language that's hard to get 
+anything complicated done with. It has error messages that may scare and confuse
+new developers and often times can crash and be a very frustrating experience. 
+However, the fundamentals of this language are present in pretty much every other
+language. You also don't need to learn things like object oriented design upfront 
+either because C is a simple procedural language.&lt;/p&gt;
+&lt;p&gt;Knowing C also opens up some valuable tools in friendlier languages. Often,
+these languages will have something called interop where you can call functions
+defined in C. C is often significantly faster than the friendlier languages, so
+you can call on C code when you need that extra performance. In particular, C
+and Python are a very strong combination to know.&lt;/p&gt;
+&lt;p&gt;I'm a bit bias here because C opened my eyes to the world of software development. Before
+learning C, I had learned a bunch of other languages and they all felt like
+toys to me. I wanted to get tossed into the deep end, but the books on Python
+and JavaScript would never satisfy my craving. C is where I finally started
+understanding how programming worked.&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;I have purposefully avoided a few 'religious' topics, such as interpreted vs compiled, 
+and dynamic typing vs static typing. This was entirely intentional as to someone
+learning their first language, these choices really don't matter. The same goes
+for whitespace text significance; I understand this may be abhorred by some, but
+again, to a beginner, it doesn't matter.&lt;/p&gt;
+&lt;p&gt;As experienced developers, we need to avoid our personal biases and try to guide
+new developers in the way that's best for them. And while yes, I think that
+learning C this day and age is still a very important thing to do, I concede that there
+is value in learning friendlier languages first. In fact, I recommend something
+quite contrary to my preferences.&lt;/p&gt;
+&lt;p&gt;I think the most important thing above all else is to get the learner passionate
+about programming. Exposing them to something like C, C++, C#, Java or Rust first is 
+a huge missed opportunity. The first language they learn should be something they &lt;em&gt;want&lt;/em&gt;
+to learn and use. This probably isn't going to be the languages that tell them
+that they're doing it wrong at every opportunity.&lt;/p&gt;
+&lt;p&gt;My first programming language was actually a proprietary scripting language made
+for a game implemented in VB6. To work with it, you had to use a textbox with no
+line numbers in one file and if there was a small error anywhere, the whole
+thing broke with no error messages. Did I become a good programmer with it? No. Was
+it a good language? Heck no! But it gave me inspiration to create fun things for
+my guests. And writing those silly little scripts of mine gave me the passion to 
+keep learning, long after the game itself had died.&lt;/p&gt;</content><category term="development"></category><category term="Advice"></category></entry><entry><title>Building your own geolocation API</title><link href="https://www.derpybox.com/building-your-own-geolocation-api.html" rel="alternate"></link><published>2019-06-04T00:00:00-04:00</published><updated>2019-06-04T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2019-06-04:/building-your-own-geolocation-api.html</id><summary type="html">&lt;p&gt;How to develop your own geolocation API and avoid third party services like Google Maps.&lt;/p&gt;</summary><content type="html">&lt;p&gt;One cool project I worked on was building up a geolocation API. 
+This service obtains a latitude and longitude via web request and responds back
+with the closest city to that location. Well, to be more accurate, it provides
+more than just the city; it provides the country, the province, the primary
+language and a whole bunch of other bits of metadata.&lt;/p&gt;
+&lt;p&gt;There are two ways to go at this that I know of if you want to build something in-house.
+The first way (and the one we didn't use) is to use OpenStreetMaps. OSM provides
+location information in the form of a Postgresql database. You can host your own
+instance with docker and use the database to find the closest location to a given point through
+standard queries. The second way is using &lt;a href="https://en.wikipedia.org/wiki/GeoNames"&gt;GeoNames&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;GeoNames is a free database available under creative commons. They deserve a lot
+more attention than what they get. They provide CSV files of geographical data,
+including the coordinates of the locations, the name, what the point is, population
+and more. It's an amazing data set that can be used for a lot of purposes; especially
+when you consider how rare it is to find geological resources that aren't proprietary
+or heavily restricted. You would think information about our world would be available
+to the community, but it sure as heck ain't.&lt;/p&gt;
+&lt;p&gt;CSV is a relatively easy format to parse; the tricky part is figuring out how to
+use the data efficiently. These files are several gigabytes in size; doing a brute
+force for-loop through the dataset isn't going to be nearly fast enough. One solution
+is to build a very specific kind of datastructure; a k-dimensional tree.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/K-d_tree"&gt;&lt;img alt="KD Tree" src="https://www.derpybox.com/images/KdTree/KDTree-animation.gif"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I'm not going to go &lt;em&gt;too&lt;/em&gt; computer sciency on you. At each level of the tree, you
+compare either the X dimension or Y dimensions of your data and navigate down one
+of the branches based on some easy rules.&lt;/p&gt;
+&lt;p&gt;Starting at the root node:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;current_best&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;nodes&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;root&lt;/span&gt;
+&lt;span class="n"&gt;current_node&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;root&lt;/span&gt;
+
+&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;current_node&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;current_node&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;current_node&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;left&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;current_node&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;current_node&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;right&lt;/span&gt;
+
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;distance&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;current_node&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;distance&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;current_node&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parent&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;current_best&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;current_node&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;current_node&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;break&lt;/span&gt;
+
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;current_node&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;current_node&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;current_node&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;left&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="n"&gt;current_node&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;current_node&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;right&lt;/span&gt;
+
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;distance&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;current_node&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;request&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;distance&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;current_node&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;parent&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+        &lt;span class="n"&gt;current_best&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;current_node&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;current_node&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;break&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;As you can see, we have this repeating pattern alternating X and Y checks.
+At each level, you're choosing to navigate down the left or right branch by comparing
+your requested position against the node stored at that particular level. If your
+value is less than the node, you go left; otherwise, you go right. As you navigate
+down the levels, you're also doing comparisons to try to keep track of the closest
+node to your location. This pattern continues until you reach the terminating
+leaf node. &lt;/p&gt;
+&lt;p&gt;There is a certain level of complexity involved in building up the tree. There's
+no hard rule on what node belongs to what level, meaning you can potentially end up with
+an unbalanced tree. A solution to this is to take on some additional complexity
+when building the tree and choose the midpoints based on median values.
+If the middle node is the median, you should expect to see an equal depth level 
+on both sides of the tree.&lt;/p&gt;
+&lt;p&gt;The downside to this approach is that if you start changing it after construction 
+by adding more nodes and erasing other nodes, you're likely going to need to 
+recalculate your entire tree to make it balanced again. You also might not want
+a balanced tree; perhaps one type of search is way more common than the other.&lt;/p&gt;
+&lt;p&gt;Lookups are incredibly fast at O(log n) efficiency if you can get this working. 
+You can easily request thousands of points in bulk with the vast amount of 
+your overhead being the transport medium. (ie: TCP being slow.) &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/K-d_tree"&gt;Wikipedia offers an example in Python&lt;/a&gt; on how to implement the algorithm. Alternatively, 
+you can probably find a nice library that implements it. At any rate, once you've 
+loaded the data into the k-d tree, you're basically done! Just wrap up your 
+search method in a web or socket API and call it a day.&lt;/p&gt;</content><category term="development"></category><category term="Geolocation"></category></entry><entry><title>Where did /home go?...</title><link href="https://www.derpybox.com/where-did-home-go.html" rel="alternate"></link><published>2019-06-02T00:00:00-04:00</published><updated>2019-06-02T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2019-06-02:/where-did-home-go.html</id><summary type="html">&lt;p&gt;I swear, every time I try starting up my blog again, something explodes.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I must be cursed as a blogger. Every time I start writing articles,
+something stupid happens. This time, my distro-hopping ways have finally
+caught up with me.&lt;/p&gt;
+&lt;p&gt;Let's rewind a bit; about a week ago, I decided to change my Linux distro because
+I wanted to try out what's happening in KDE. I downloaded Neon as it's
+basically Ubuntu + the latest version of KDE. Upon installing it, I started
+receiving numerous errors that there were bad sectors on my disk. I could
+barely login let alone do anything useful. So I went back to the live USB
+and ran fsck on the drive.&lt;/p&gt;
+&lt;p&gt;It was at that moment that I knew I royally fscked up. Its solution was
+to essentially destroy my home directory. Everything I had; gone. No matter! I have
+a backup folder!... Or rather, had. At some point, I accidentally formatted the
+drive. After panicking for about 10-15 minutes, I realized I had a backup of 
+my most important files on an external drive. Thankfully, my old backup was
+there and worked. I didn't regain everything, but I retained my most important
+files that I can't replace.&lt;/p&gt;
+&lt;p&gt;Once I calmed down, I learned something interesting. fsck doesn't
+exactly nuke everything; it tries to recover what it can and inserts the
+files it can recover into the lost+found folder on your hard drive root.
+Well, it's not exactly pretty. The folder names are mangled into unreadable 
+names, but you can still recover a fair bit with some bash wizardry.&lt;/p&gt;
+&lt;p&gt;After learning about the existance of Lost+Found, I ran the following command:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="gp"&gt;foo@bar:~$ &lt;/span&gt;find&lt;span class="w"&gt; &lt;/span&gt;../lost+found/&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;~/derp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This basically created a file index for me to go through with vim. There are
+too many files to manually browse through in terminal, so I created a little 
+index of everything there. And believe it or not, I'd say 98% of my home directory
+was there. I just had to dig down to the right folder and pick up my stuff.&lt;/p&gt;
+&lt;p&gt;So if you're ever in the same situation, have a dig down in the lost+found. You'll
+never know what you'll find. Honestly though, you don't want to end up in this 
+position in the first place. Back up your stuff and make sure your stuff is being 
+backed up on a semi-regular basis. If you don't do that, at least make sure to have
+copies of your most valuable files on a USB drive or an external drive.&lt;/p&gt;</content><category term="social"></category><category term="banter"></category></entry><entry><title>First look at Mycroft</title><link href="https://www.derpybox.com/first-look-at-mycroft.html" rel="alternate"></link><published>2019-05-24T00:00:00-04:00</published><updated>2019-05-24T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2019-05-24:/first-look-at-mycroft.html</id><summary type="html">&lt;p&gt;A look at the open source AI voice assistant&lt;/p&gt;</summary><content type="html">&lt;p&gt;Smart home technology. Great in theory, kind of scary in practice. In particular,
+smartspeaker systems like Amazon Alexa and Google Home are quite scary. They're
+closed devices which virtually everyone knows is spying on them; yet people
+use them anyway. And honestly, I kind of can't blame them. Smartspeakers are frankly
+a really neat idea. Kind of like in Star Trek where people were able to speak with
+the onboard computer to trigger actions and commands.&lt;/p&gt;
+&lt;p&gt;I thought about getting one of these things for fun and to see what I could do
+with it. Internally though, I couldn't get the thought out of my mind that I was
+essentially inviting BonziBuddy to sit in my bedroom. Then I remembered a certain
+kickstarter project; Mycroft.&lt;/p&gt;
+&lt;p&gt;So a few weeks back, I purchased the Mycroft Mark 1. Mycroft is a free and open
+source voice assistant; it can be downloaded as a service on your local machine,
+embedded into a Raspberry Pi 3 or purchased online. I have numerous Raspberry Pis
+around my home and I could have just reused one of those, but you can't deny...
+the shell of the mark 1 is pretty aborable with it's big LED eyes and text display.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mark 1" src="https://www.derpybox.com/images/Mycroft/mark-1.png"&gt;&lt;/p&gt;
+&lt;p&gt;What makes the Mycroft different from the other voice assistants is that it's
+entirely under your control. You can actually SSH into it and change its behaviour.
+All of its &lt;em&gt;skills&lt;/em&gt;, as its behaviours are called, can be freely removed or you
+can go online and add new skills from the mycroft home service. You can also
+use the msm tool in ssh (Mycroft Skills Manager) to easily pull in skills from 
+decentralized sources like github.&lt;/p&gt;
+&lt;p&gt;The skills themselves are developed in Python, as is the core of the service.
+That means the entire thing is hackable. If you need to change how a particular
+skill behaves or even how the core itself behaves, you can easily go in with vim,
+do your changes and that's it. No recompilation and most of the time, you don't even
+need to reboot the device. The central process automatically reimports skills 
+you've changed.&lt;/p&gt;
+&lt;p&gt;As for how it works, you call out to it "Hey Mycroft", then give it a command.
+Your command gets sent to a server and gets turned into text. That text is then
+locally processed on the device through a series of regex expressions. If the 
+regex for a particular skill matches, that skill gets invoked. &lt;/p&gt;
+&lt;p&gt;This is the only data they get; your voice for the purposes of speech to text.
+They don't control what context that speech gets used for or even
+know what skill you're trying to use. They've also expressed interest in trying
+to make it easy to host their service locally so you don't need to send them
+recordings of your voice.&lt;/p&gt;
+&lt;p&gt;Now, as a product for your grandparents, I would hold back at least until the mark 2. 
+The mark 1 is great, but it's definitely more geared towards developers and people 
+who want to tinker with the platform. The mark 2 is overall a more polished revision.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mark 2" src="https://www.derpybox.com/images/Mycroft/Mark II logo.png"&gt;&lt;/p&gt;
+&lt;p&gt;As a product for a hardware/software developer, I would whole-heartedly recommend
+it. Having a voice assistant you can freely control and extend is incredible.
+If something is missing, you can just build it yourself. Or chances are someone
+in the python community has already got you most of the way there with a library
+or two. In the future, I'll talk a bit about the youtube skill I developed and 
+what was involved in getting Mycroft to play youtube videos for me. &lt;/p&gt;
+&lt;p&gt;Spoiler: it's nowhere near as hard to develop skills as you'd think.&lt;/p&gt;
+&lt;p&gt;For more information:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://mycroft.ai/"&gt;Mycroft Website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=M398I6YIleM"&gt;Video of Raspberry Pi Setup by DrZzs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Ud3XLEGIu8U"&gt;Mycroft Mark II Kickstarter Video&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="development"></category><category term="Mycroft"></category></entry><entry><title>Haldo!</title><link href="https://www.derpybox.com/haldo.html" rel="alternate"></link><published>2019-05-23T00:00:00-04:00</published><updated>2019-05-23T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2019-05-23:/haldo.html</id><summary type="html">&lt;p&gt;Let's start the old blog back up.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Nice to meet you! I've decided to bring this blog back to life. I tried my hand at
+this kind of thing before, but it became more of a chore than something I did for fun. 
+I'll be trying to avoid that by treating posts as a long form of twitter with fairly 
+minimal editing. I'll talk about some  cool stuff I've been working on, any 
+interesting projects I've came across on the web, the typical stuff. I'll also 
+sometimes talk about my interests and social stuff.&lt;/p&gt;
+&lt;p&gt;I work full time as a software developer. I mostly work with C, C++, C# and Python
+and they're basically my main toolbox languages. I also know JavaScript and
+PHP, but I try to avoid web development as much as I can. UI is hard. There are
+a few other languages I know enough to use if they're particularly suited for a
+project, like Java, Ruby, Lua and Rust, but I'm not as comfortable with them.&lt;/p&gt;
+&lt;p&gt;For my CMS on this blog, I'm using &lt;a href="https://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;.
+This is a good thing for multiple reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It generates static websites that are easy to deploy where ever I want.&lt;/li&gt;
+&lt;li&gt;I don't need to create and manage my own style unless I really want to.&lt;/li&gt;
+&lt;li&gt;A static website means I'm discouraged from extending it with my own microservices.&lt;/li&gt;
+&lt;li&gt;It lets me write my articles in vim~&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Anyhow, expect to see some (hopefully) interesting articles. There will be no
+commenting system. I attempted to add Disqus, but I kind of talked myself out
+of it. I have no interest in moderating the thing and I don't like the idea of
+adding in dependencies which could be harvesting data in ways I don't know.&lt;/p&gt;</content><category term="social"></category><category term="banter"></category></entry></feed>

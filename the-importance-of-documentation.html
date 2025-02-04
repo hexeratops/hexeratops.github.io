@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>The Importance of Documentation &ndash; derpybox</title>
+
+    <!-- Meta -->
+    <meta name="description" content="derpybox &ndash; ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="view-transition" content="same-origin" />
+
+    <!-- Social -->
+    <meta property="article:author" content="LuckyStoat" />
+    <meta property="article:section" content="development" />
+    <meta property="article:published_time" content="2024-02-27" />
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="The Importance of Documentation"/>
+    <meta property="og:description" content="A bit of a discussion/rant about software documentation and its increasing importance in modern times."/>
+    <meta property="og:site_name" content="derpybox" />
+    <meta property="og:url" content="https://www.derpybox.com/the-importance-of-documentation.html"/>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The Importance of Documentation">
+    <meta name="twitter:description" content="A bit of a discussion/rant about software documentation and its increasing importance in modern times.">
+    <meta name="twitter:url" content="https://www.derpybox.com/the-importance-of-documentation.html">
+
+    <!-- Feed -->
+    <link rel="alternate" type="application/atom+xml" href="https://www.derpybox.com/feeds/atom.xml" title="derpybox Atom Feed" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/pygments-highlight-github.css">
+    <link rel="stylesheet" type="text/css" href="/emoji_map/emoji.css">
+
+    <!-- Icon -->
+
+    <!-- Social -->
+    <link href="https://mastodon.social/@LuckyStoat" rel="me">
+  </head>
+
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://www.derpybox.com" title="Home"><img src="/images/icon_joltik.png" style="width:60px;height:60px;min-width:60px;"></a>
+        <nav id="header-menu">
+          <ul>
+            <li><a href="https://www.derpybox.com/pages/about-this-site.html">About this Site</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+
+
+    <br><br><br>
+
+    <article>
+      <header class="w3-container col-main">
+        <h1>The Importance of Documentation</h1>
+        <div class="post-info">
+          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+            <span><time datetime="2024-02-27T00:00:00-05:00">Tue 27 February 2024</time> in <a href="https://www.derpybox.com/category/development.html" title="All articles in category development">development</a></span>
+          </div>
+          <div>
+            <span class="w3-tag w3-light-grey w3-text-green w3-hover-green">
+              <a href="https://www.derpybox.com/tag/software.html" title="All articles with Software tag">#Software</a>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <br>
+
+
+      <div class="col-main w3-container">
+        <section id="content">
+          <p>So in my experience as a developer, documentation is probably one of the most overlooked or even
+downright ignored things. To be fair, I understand it completely! Documenting is boring, it's slow, 
+it's unglamorous, it often needs updating to stay relevant, it's generally not appreciated by other
+developers on the team... All in all, it's honestly a major pain. Compared to writing code and even 
+writing unit tests, documenting is an unfun slog in comparison.</p>
+<p>However, I'd argue in modern times, documentation is even more important than ever. If you
+have a project you intend for other people to use, you owe it to them, to your team and to 
+yourself to write good documentation. </p>
+<h3>Why Write Documentation?</h3>
+<p>The main reason is fairly obvious: to simply explain just how to use what you've made.</p>
+<p>Here's the thing, when someone wants to know how to use your library, the last thing they want
+to do is read your code. If I need to read the python code of a library to figure out how to
+get started, I <em>will</em> move on to something else. The same goes for header files, telling someone 
+to read your header file to figure out your classes is just as bad and lazy. I don't want to have
+to read code for half an hour to end up determining that a library isn't a good fit for my project.</p>
+<p>Good documentation saves time for everyone involved. Instead of your potential users needing to 
+spend hours reading your code to figure out if your library can actually help them or not, they can 
+just look at the documentation to see if its a good fit. From documentation, you can quickly determine
+the capabilities of the library and figure out how to use it in the way they need.</p>
+<p>The other problem is the rise of AI and poor documentation only further increases its relevance.
+Imagine you have a complicated library like OpenCV, but it doesn't give you meaningful examples to
+accomplish simple goals. Previously, you'd probably Google it, go to Reddit or StackOverflow or end
+up on Discord to ask other developers. These days? You can just ask an AI to generate the sample code.</p>
+<p>It's a horrible state of affairs when you come across a project so poorly explained that you need
+to ask an AI how a feature works or to get a starting point for your project. I don't like where
+this AI stuff is going, but I also value my time. When I come across a project with poor documentation,
+I'm not above asking Bing or ChatGPT what to do. It also never stubbornly says "Why are you trying to 
+do X when you could do Y?", or "Have you tried Googling it?" which are major frustrations of mine.</p>
+<h3>Is it Good Enough?</h3>
+<p>I would argue the following types of documentation aren't enough to fully document how a library
+works:</p>
+<ul>
+<li>Header Files</li>
+<li>Source Code Comments</li>
+<li>Descriptions of classes/structs/functions in isolation</li>
+</ul>
+<p>The major problems with these are that they describe things in isolation. This is great if you
+already have a picture in your head for using a library. If you're just trying to put some
+functionality together, this is useless.</p>
+<p>Just imagine for a second that you're a fresh developer, trying to figure out a simple "hello world"
+program in C. Now picture that there's no examples of how to use printf and you're advised to read
+the man page on how it works. If you're trying to do something super niche, the man-page is great.
+But all the guy needs to do is <code>printf("Hello world!\n")</code>. </p>
+<p>This is something that bugs me quite a bit about documentation generators from comments, such as
+Doxygen and Rustdoc. They document functions and structs in pains-taking detail, but you don't get
+the full picture of how everything fits together or examples of common and not-so-common tasks for 
+the library.</p>
+<h3>What to Do</h3>
+<p>Examples, examples, examples, examples, examples! </p>
+<p><img alt="Ballmer - developers developers" src="https://www.derpybox.com/images/developers-ballmer.gif"></p>
+<p>Build multiple common examples for your user. It's great having a simple example to get someone
+going off the bat, but what really helps a lot is having numerous examples showing different
+uses of your library. If I could give a massive shoutout to one library that absolutely does
+this right, it's <a href="https://curl.se/libcurl/c/example.html">libcurl</a>.</p>
+<p>Just look at all these examples accomplishing different goals. On top of that, the code is
+meant to be short and sweet at the expense of ignoring error checks. This is where you <em>could</em>
+use the function-by-function documentation to ensure you're using the library correctly and catching
+all error cases.</p>
+<p>You can also use your unit tests as documentation to show what error conditions can happen and how 
+to check for them. I'd argue this partially falls under the previous section and that people shouldnt
+have to read your code to understand how to use your library. I don't think code should only be documented
+by unit tests, but it's important to have them and they can potentially act as proof of concept code.</p>
+<p>The other mechanisms I described in the previous section are also helpful. Commenting your header files
+and creating isolated documentation for your functions and classes are helpful, but I think examples
+are the primary driver for their usefulness. Examples can give someone the big picture to start using
+a library while the detailed documentation can help them use it right and be driven to other functionality
+they hadn't noticed yet.</p>
+<p><em>Sigh...</em> This was just a big rant. I wanted to emphasize how important it is to have good documentation
+because I hate when I come across a great project where the documentation is missing. So please, if
+you're releasing something for people to use, please make sure you explain what you've done and how
+other people can make use of it properly.</p>
+        </section>
+
+        <br><br><br>
+
+        <footer>
+          <div class="adjust-width">
+            <div id="author-block" class="w3-light-grey w3-border">
+              <div id="author-info">
+                <a href=""><img style="width: 60px; height: 60px;" src="https://www.gravatar.com/avatar/0d22b66f89ce7b9d46e3d9fde6c80405?s=160" onerror="this.src='theme/images/avatar.png'" alt="Avatar"></a>
+                <div style="margin-left: 20px; margin-top: 15px;">
+                  <a href=""><span id="author-name" class="w3-hover-text-dark-grey">LuckyStoat</span></a>
+                  <p id="author-story">Software developer and amateur astronomer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+	  <!--
+          <p style="font-size:10pt; font-style: italic;">Did you like this article? Share it with your friends!</p>
+          <div id="share" class="share">
+            <a href="http://www.facebook.com/sharer.php?u=https%3A//www.derpybox.com/the-importance-of-documentation.html&amp;t=derpybox%3A%20The%20Importance%20of%20Documentation" target="_blank" class="w3-btn w3-indigo">
+              <i class="fa fa-facebook"></i> <span>Facebook</span>
+            </a>
+            <a href="http://twitter.com/share?url=https%3A//www.derpybox.com/the-importance-of-documentation.html&amp;text=derpybox%3A%20The%20Importance%20of%20Documentation" target="_blank" class="w3-btn w3-blue">
+              <i class="fa fa-twitter"></i> <span>Twitter</span>
+            </a>
+          </div>
+	  -->
+
+          <br><br><br>
+
+
+
+        </footer>
+      </div>
+    </article>
+
+
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>
+          &copy;
+          LuckyStoat
+ | <a href="https://www.derpybox.com/feeds/atom.xml">Atom feed <i class="fa fa-rss" aria-hidden="true"></i></a>        </span>
+      </div>
+    </footer>
+
+
+
+  </body>
+</html>
