@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>derpybox</title><link href="https://www.derpybox.com/" rel="alternate"></link><link href="https://www.derpybox.com/feeds/atom.xml" rel="self"></link><id>https://www.derpybox.com/</id><updated>2024-02-27T00:00:00-05:00</updated><entry><title>The Importance of Documentation</title><link href="https://www.derpybox.com/the-importance-of-documentation.html" rel="alternate"></link><published>2024-02-27T00:00:00-05:00</published><updated>2024-02-27T00:00:00-05:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2024-02-27:/the-importance-of-documentation.html</id><summary type="html">&lt;p&gt;A bit of a discussion/rant about software documentation and its increasing importance in modern times.&lt;/p&gt;</summary><content type="html">&lt;p&gt;So in my experience as a developer, documentation is probably one of the most overlooked or even
+<feed xmlns="http://www.w3.org/2005/Atom"><title>derpybox</title><link href="https://www.derpybox.ca/" rel="alternate"></link><link href="https://www.derpybox.ca/feeds/atom.xml" rel="self"></link><id>https://www.derpybox.ca/</id><updated>2024-02-27T00:00:00-05:00</updated><entry><title>The Importance of Documentation</title><link href="https://www.derpybox.ca/the-importance-of-documentation.html" rel="alternate"></link><published>2024-02-27T00:00:00-05:00</published><updated>2024-02-27T00:00:00-05:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.ca,2024-02-27:/the-importance-of-documentation.html</id><summary type="html">&lt;p&gt;A bit of a discussion/rant about software documentation and its increasing importance in modern times.&lt;/p&gt;</summary><content type="html">&lt;p&gt;So in my experience as a developer, documentation is probably one of the most overlooked or even
 downright ignored things. To be fair, I understand it completely! Documenting is boring, it's slow, 
 it's unglamorous, it often needs updating to stay relevant, it's generally not appreciated by other
 developers on the team... All in all, it's honestly a major pain. Compared to writing code and even 
@@ -48,7 +48,7 @@ the full picture of how everything fits together or examples of common and not-s
 the library.&lt;/p&gt;
 &lt;h3&gt;What to Do&lt;/h3&gt;
 &lt;p&gt;Examples, examples, examples, examples, examples! &lt;/p&gt;
-&lt;p&gt;&lt;img alt="Ballmer - developers developers" src="https://www.derpybox.com/images/developers-ballmer.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ballmer - developers developers" src="https://www.derpybox.ca/images/developers-ballmer.gif"&gt;&lt;/p&gt;
 &lt;p&gt;Build multiple common examples for your user. It's great having a simple example to get someone
 going off the bat, but what really helps a lot is having numerous examples showing different
 uses of your library. If I could give a massive shoutout to one library that absolutely does
@@ -69,7 +69,7 @@ they hadn't noticed yet.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Sigh...&lt;/em&gt; This was just a big rant. I wanted to emphasize how important it is to have good documentation
 because I hate when I come across a great project where the documentation is missing. So please, if
 you're releasing something for people to use, please make sure you explain what you've done and how
-other people can make use of it properly.&lt;/p&gt;</content><category term="development"></category><category term="Software"></category></entry><entry><title>Aquaman and the Lost Kingdom Review</title><link href="https://www.derpybox.com/aquaman-and-the-lost-kingdom-review.html" rel="alternate"></link><published>2024-01-01T00:00:00-05:00</published><updated>2024-01-01T00:00:00-05:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2024-01-01:/aquaman-and-the-lost-kingdom-review.html</id><summary type="html">&lt;p&gt;Let's review the sequel to the film that started it all for me.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Happy new year, everyone! I wish you all a very happy 2024. I mentioned earlier that I
+other people can make use of it properly.&lt;/p&gt;</content><category term="development"></category><category term="Software"></category></entry><entry><title>Aquaman and the Lost Kingdom Review</title><link href="https://www.derpybox.ca/aquaman-and-the-lost-kingdom-review.html" rel="alternate"></link><published>2024-01-01T00:00:00-05:00</published><updated>2024-01-01T00:00:00-05:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.ca,2024-01-01:/aquaman-and-the-lost-kingdom-review.html</id><summary type="html">&lt;p&gt;Let's review the sequel to the film that started it all for me.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Happy new year, everyone! I wish you all a very happy 2024. I mentioned earlier that I
 wanted to be more frequent on my blog, and something I like doing is going to the movies.
 So I thought, why not share my opinions on the films I see?&lt;/p&gt;
 &lt;p&gt;Going to the movies regularly actually started with Aquaman on my 2018 Christmas holiday.
@@ -116,7 +116,7 @@ they always had an easy escape. There's just no stakes, and the visual effects d
 a wow-factor to keep my interest in those scenes. &lt;/p&gt;
 &lt;p&gt;Again, I was looking forward to this movie and I wanted to like it. I guess it just wasn't the film
 for me. I wouldn't suggest seeing it, but do go see the Wonka movie. It was such a great feel-good
-movie that really hit the spot.&lt;/p&gt;</content><category term="movie_reviews"></category><category term="Movies"></category></entry><entry><title>Debian Stable for a Month</title><link href="https://www.derpybox.com/debian-stable-for-a-month.html" rel="alternate"></link><published>2023-11-25T00:00:00-05:00</published><updated>2023-11-25T00:00:00-05:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2023-11-25:/debian-stable-for-a-month.html</id><summary type="html">&lt;p&gt;I decided to install Debian and stick with stable for a month. And it went rather well!&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Backstory&lt;/h2&gt;
+movie that really hit the spot.&lt;/p&gt;</content><category term="movie_reviews"></category><category term="Movies"></category></entry><entry><title>Debian Stable for a Month</title><link href="https://www.derpybox.ca/debian-stable-for-a-month.html" rel="alternate"></link><published>2023-11-25T00:00:00-05:00</published><updated>2023-11-25T00:00:00-05:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.ca,2023-11-25:/debian-stable-for-a-month.html</id><summary type="html">&lt;p&gt;I decided to install Debian and stick with stable for a month. And it went rather well!&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Backstory&lt;/h2&gt;
 &lt;p&gt;I have a problem: I... I am a distro hopper. I can't permanently settle on just
 one Linux distribution. I may settle on one for a few months, but I'll eventually
 get bored and want to go explore what another distribution is offering.&lt;/p&gt;
@@ -220,7 +220,7 @@ the day, it's still a standard Linux distribution that you can manage how you li
 Debian Stable itself has proven to be incredibly stable and a fantastic system
 to run.&lt;/p&gt;
 &lt;p&gt;I'm looking forward to the release of Debian Trixie where I'm sure I'm going to
-visit it again. Perhaps... In a Virtual Machine? (Haha, just a bit of a joke.)&lt;/p&gt;</content><category term="social"></category><category term="banter"></category></entry><entry><title>I Hosted my own Social Media Site</title><link href="https://www.derpybox.com/i-hosted-my-own-social-media-site.html" rel="alternate"></link><published>2023-08-29T00:00:00-04:00</published><updated>2023-08-29T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2023-08-29:/i-hosted-my-own-social-media-site.html</id><summary type="html">&lt;p&gt;I tried hosting my own social media site. Here's how it went!&lt;/p&gt;</summary><content type="html">&lt;h2&gt;fedi.derpybox.com&lt;/h2&gt;
+visit it again. Perhaps... In a Virtual Machine? (Haha, just a bit of a joke.)&lt;/p&gt;</content><category term="social"></category><category term="banter"></category></entry><entry><title>I Hosted my own Social Media Site</title><link href="https://www.derpybox.ca/i-hosted-my-own-social-media-site.html" rel="alternate"></link><published>2023-08-29T00:00:00-04:00</published><updated>2023-08-29T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.ca,2023-08-29:/i-hosted-my-own-social-media-site.html</id><summary type="html">&lt;p&gt;I tried hosting my own social media site. Here's how it went!&lt;/p&gt;</summary><content type="html">&lt;h2&gt;fedi.derpybox.com&lt;/h2&gt;
 &lt;p&gt;For about a month, I hosted a little server on fedi.derpybox.com. This was my own
 private instance of Pleroma, a service compatible with communicating with Mastodon
 servers and other similar services. The whole deal with the fediverse in general
@@ -294,7 +294,7 @@ the way, shoutouts to the &lt;a href="https://johto.substack.com/"&gt;Johto Time
 of contact. Please feel free to reach out at &lt;a href="https://mastodon.social/@LuckyStoat"&gt;LuckyStoat@mastodon.social&lt;/a&gt;
 if you want to leave any comments, have any feedback or just want to chat. I'll be there!
 And who knows, maybe in the future if the fediverse gets better controls over the content
-which gets shared between servers, perhaps I'll relaunch fedi.derpybox.com once more.&lt;/p&gt;</content><category term="social"></category><category term="banter"></category></entry><entry><title>Web Integrity API</title><link href="https://www.derpybox.com/web-integrity-api.html" rel="alternate"></link><published>2023-08-08T00:00:00-04:00</published><updated>2023-08-08T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2023-08-08:/web-integrity-api.html</id><summary type="html">&lt;p&gt;Let's talk about this a bit...&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Web Integrity API&lt;/h3&gt;
+which gets shared between servers, perhaps I'll relaunch fedi.derpybox.com once more.&lt;/p&gt;</content><category term="social"></category><category term="banter"></category></entry><entry><title>Web Integrity API</title><link href="https://www.derpybox.ca/web-integrity-api.html" rel="alternate"></link><published>2023-08-08T00:00:00-04:00</published><updated>2023-08-08T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.ca,2023-08-08:/web-integrity-api.html</id><summary type="html">&lt;p&gt;Let's talk about this a bit...&lt;/p&gt;</summary><content type="html">&lt;h3&gt;Web Integrity API&lt;/h3&gt;
 &lt;p&gt;A new proposal document has been pushed by a few Google employees. This proposal is 
 allegedly intended to certify that the web browser visiting a website is being used 
 by a human and that the browser hasn’t been tampered with.&lt;/p&gt;
@@ -335,7 +335,7 @@ servers, not owned by any one massive company or small collection of companies.&
 &lt;p&gt;This is one of my more extreme opinions, but please at the very least consider trying some of these other 
 web browsers. They all respect your privacy and aren’t driven by a company which makes its money by 
 tracking its users, selling ads, and scraping the web to only later say it’s unacceptable if anyone 
-else does it.&lt;/p&gt;</content><category term="social"></category><category term="banter"></category></entry><entry><title>What should be the introductory programming language</title><link href="https://www.derpybox.com/what-should-be-the-introductory-programming-language.html" rel="alternate"></link><published>2021-03-16T00:00:00-04:00</published><updated>2021-03-16T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2021-03-16:/what-should-be-the-introductory-programming-language.html</id><summary type="html">&lt;p&gt;What should be the best programming language to teach someone first?&lt;/p&gt;</summary><content type="html">&lt;p&gt;Every programmer was new to software development at some point. Some are self taught,
+else does it.&lt;/p&gt;</content><category term="social"></category><category term="banter"></category></entry><entry><title>What should be the introductory programming language</title><link href="https://www.derpybox.ca/what-should-be-the-introductory-programming-language.html" rel="alternate"></link><published>2021-03-16T00:00:00-04:00</published><updated>2021-03-16T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.ca,2021-03-16:/what-should-be-the-introductory-programming-language.html</id><summary type="html">&lt;p&gt;What should be the best programming language to teach someone first?&lt;/p&gt;</summary><content type="html">&lt;p&gt;Every programmer was new to software development at some point. Some are self taught,
 others were mentored, and some went to college/university for a few years. But one question
 you will see every developer answer differently is: what is the best language to
 introduce someone to software development with?&lt;/p&gt;
@@ -428,7 +428,7 @@ line numbers in one file and if there was a small error anywhere, the whole
 thing broke with no error messages. Did I become a good programmer with it? No. Was
 it a good language? Heck no! But it gave me inspiration to create fun things for
 my guests. And writing those silly little scripts of mine gave me the passion to 
-keep learning, long after the game itself had died.&lt;/p&gt;</content><category term="development"></category><category term="Advice"></category></entry><entry><title>Building your own geolocation API</title><link href="https://www.derpybox.com/building-your-own-geolocation-api.html" rel="alternate"></link><published>2019-06-04T00:00:00-04:00</published><updated>2019-06-04T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2019-06-04:/building-your-own-geolocation-api.html</id><summary type="html">&lt;p&gt;How to develop your own geolocation API and avoid third party services like Google Maps.&lt;/p&gt;</summary><content type="html">&lt;p&gt;One cool project I worked on was building up a geolocation API. 
+keep learning, long after the game itself had died.&lt;/p&gt;</content><category term="development"></category><category term="Advice"></category></entry><entry><title>Building your own geolocation API</title><link href="https://www.derpybox.ca/building-your-own-geolocation-api.html" rel="alternate"></link><published>2019-06-04T00:00:00-04:00</published><updated>2019-06-04T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.ca,2019-06-04:/building-your-own-geolocation-api.html</id><summary type="html">&lt;p&gt;How to develop your own geolocation API and avoid third party services like Google Maps.&lt;/p&gt;</summary><content type="html">&lt;p&gt;One cool project I worked on was building up a geolocation API. 
 This service obtains a latitude and longitude via web request and responds back
 with the closest city to that location. Well, to be more accurate, it provides
 more than just the city; it provides the country, the province, the primary
@@ -449,7 +449,7 @@ to the community, but it sure as heck ain't.&lt;/p&gt;
 use the data efficiently. These files are several gigabytes in size; doing a brute
 force for-loop through the dataset isn't going to be nearly fast enough. One solution
 is to build a very specific kind of datastructure; a k-dimensional tree.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/K-d_tree"&gt;&lt;img alt="KD Tree" src="https://www.derpybox.com/images/KdTree/KDTree-animation.gif"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/K-d_tree"&gt;&lt;img alt="KD Tree" src="https://www.derpybox.ca/images/KdTree/KDTree-animation.gif"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I'm not going to go &lt;em&gt;too&lt;/em&gt; computer sciency on you. At each level of the tree, you
 compare either the X dimension or Y dimensions of your data and navigate down one
 of the branches based on some easy rules.&lt;/p&gt;
@@ -502,7 +502,7 @@ your overhead being the transport medium. (ie: TCP being slow.) &lt;/p&gt;
 &lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/K-d_tree"&gt;Wikipedia offers an example in Python&lt;/a&gt; on how to implement the algorithm. Alternatively, 
 you can probably find a nice library that implements it. At any rate, once you've 
 loaded the data into the k-d tree, you're basically done! Just wrap up your 
-search method in a web or socket API and call it a day.&lt;/p&gt;</content><category term="development"></category><category term="Geolocation"></category></entry><entry><title>Where did /home go?...</title><link href="https://www.derpybox.com/where-did-home-go.html" rel="alternate"></link><published>2019-06-02T00:00:00-04:00</published><updated>2019-06-02T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2019-06-02:/where-did-home-go.html</id><summary type="html">&lt;p&gt;I swear, every time I try starting up my blog again, something explodes.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I must be cursed as a blogger. Every time I start writing articles,
+search method in a web or socket API and call it a day.&lt;/p&gt;</content><category term="development"></category><category term="Geolocation"></category></entry><entry><title>Where did /home go?...</title><link href="https://www.derpybox.ca/where-did-home-go.html" rel="alternate"></link><published>2019-06-02T00:00:00-04:00</published><updated>2019-06-02T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.ca,2019-06-02:/where-did-home-go.html</id><summary type="html">&lt;p&gt;I swear, every time I try starting up my blog again, something explodes.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I must be cursed as a blogger. Every time I start writing articles,
 something stupid happens. This time, my distro-hopping ways have finally
 caught up with me.&lt;/p&gt;
 &lt;p&gt;Let's rewind a bit; about a week ago, I decided to change my Linux distro because
@@ -535,7 +535,7 @@ was there. I just had to dig down to the right folder and pick up my stuff.&lt;/
 never know what you'll find. Honestly though, you don't want to end up in this 
 position in the first place. Back up your stuff and make sure your stuff is being 
 backed up on a semi-regular basis. If you don't do that, at least make sure to have
-copies of your most valuable files on a USB drive or an external drive.&lt;/p&gt;</content><category term="social"></category><category term="banter"></category></entry><entry><title>First look at Mycroft</title><link href="https://www.derpybox.com/first-look-at-mycroft.html" rel="alternate"></link><published>2019-05-24T00:00:00-04:00</published><updated>2019-05-24T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2019-05-24:/first-look-at-mycroft.html</id><summary type="html">&lt;p&gt;A look at the open source AI voice assistant&lt;/p&gt;</summary><content type="html">&lt;p&gt;Smart home technology. Great in theory, kind of scary in practice. In particular,
+copies of your most valuable files on a USB drive or an external drive.&lt;/p&gt;</content><category term="social"></category><category term="banter"></category></entry><entry><title>First look at Mycroft</title><link href="https://www.derpybox.ca/first-look-at-mycroft.html" rel="alternate"></link><published>2019-05-24T00:00:00-04:00</published><updated>2019-05-24T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.ca,2019-05-24:/first-look-at-mycroft.html</id><summary type="html">&lt;p&gt;A look at the open source AI voice assistant&lt;/p&gt;</summary><content type="html">&lt;p&gt;Smart home technology. Great in theory, kind of scary in practice. In particular,
 smartspeaker systems like Amazon Alexa and Google Home are quite scary. They're
 closed devices which virtually everyone knows is spying on them; yet people
 use them anyway. And honestly, I kind of can't blame them. Smartspeakers are frankly
@@ -550,7 +550,7 @@ source voice assistant; it can be downloaded as a service on your local machine,
 embedded into a Raspberry Pi 3 or purchased online. I have numerous Raspberry Pis
 around my home and I could have just reused one of those, but you can't deny...
 the shell of the mark 1 is pretty aborable with it's big LED eyes and text display.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Mark 1" src="https://www.derpybox.com/images/Mycroft/mark-1.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mark 1" src="https://www.derpybox.ca/images/Mycroft/mark-1.png"&gt;&lt;/p&gt;
 &lt;p&gt;What makes the Mycroft different from the other voice assistants is that it's
 entirely under your control. You can actually SSH into it and change its behaviour.
 All of its &lt;em&gt;skills&lt;/em&gt;, as its behaviours are called, can be freely removed or you
@@ -575,7 +575,7 @@ recordings of your voice.&lt;/p&gt;
 &lt;p&gt;Now, as a product for your grandparents, I would hold back at least until the mark 2. 
 The mark 1 is great, but it's definitely more geared towards developers and people 
 who want to tinker with the platform. The mark 2 is overall a more polished revision.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Mark 2" src="https://www.derpybox.com/images/Mycroft/Mark II logo.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mark 2" src="https://www.derpybox.ca/images/Mycroft/Mark II logo.png"&gt;&lt;/p&gt;
 &lt;p&gt;As a product for a hardware/software developer, I would whole-heartedly recommend
 it. Having a voice assistant you can freely control and extend is incredible.
 If something is missing, you can just build it yourself. Or chances are someone
@@ -588,7 +588,7 @@ what was involved in getting Mycroft to play youtube videos for me. &lt;/p&gt;
 &lt;li&gt;&lt;a href="https://mycroft.ai/"&gt;Mycroft Website&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=M398I6YIleM"&gt;Video of Raspberry Pi Setup by DrZzs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=Ud3XLEGIu8U"&gt;Mycroft Mark II Kickstarter Video&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><category term="development"></category><category term="Mycroft"></category></entry><entry><title>Haldo!</title><link href="https://www.derpybox.com/haldo.html" rel="alternate"></link><published>2019-05-23T00:00:00-04:00</published><updated>2019-05-23T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.com,2019-05-23:/haldo.html</id><summary type="html">&lt;p&gt;Let's start the old blog back up.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Nice to meet you! I've decided to bring this blog back to life. I tried my hand at
+&lt;/ul&gt;</content><category term="development"></category><category term="Mycroft"></category></entry><entry><title>Haldo!</title><link href="https://www.derpybox.ca/haldo.html" rel="alternate"></link><published>2019-05-23T00:00:00-04:00</published><updated>2019-05-23T00:00:00-04:00</updated><author><name>LuckyStoat</name></author><id>tag:www.derpybox.ca,2019-05-23:/haldo.html</id><summary type="html">&lt;p&gt;Let's start the old blog back up.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Nice to meet you! I've decided to bring this blog back to life. I tried my hand at
 this kind of thing before, but it became more of a chore than something I did for fun. 
 I'll be trying to avoid that by treating posts as a long form of twitter with fairly 
 minimal editing. I'll talk about some  cool stuff I've been working on, any 
